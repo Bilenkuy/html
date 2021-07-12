@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: black;
+
+}
+
+h1 {
+    color:blue;
+font-size: 3rem;
+text-align: left;
+}
+
+header .menu a {
+display: block;
+text-align: right;
+font-size: 1.5rem;
+text-decoration: none;
+color:var(--main-color);
+}
+
+header .menu a:hover {
+font-weight: bold;
+}
+
+@media(min-width: 500px){
+header nav {
+display: flex;
+}
+    }
+
+header nav .menu {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner {
+    background-image: url(../img/battom.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: between;
+}
