@@ -1,11 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --main-color: black;
+  font-family: 'Ubuntu', 'sans-serif' ;
+    --main-color: rgba(0, 0, 0, 0.479);
     --accent-color: blue;
+}
+
+h1 {
+  color:blue;
+  font-size: 3.5rem;
+  text-align: left;
+  }
+  
+  h4 {
+    color: blue;
+    padding: 5px;
+  
+  }
+
+header .menu a {
+  display: block;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+header .menu a:hover {
+  font-weight: bold;
+  color: rgba(255, 255, 0, 0.445);
+}
+@media (min-width: 600px){
+header nav {
+  display: flex;
+}
+}
+
+header nav .menu {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+header nav {
+  background-color: whitesmoke;
 }
 
 .container {
@@ -13,49 +55,9 @@
   margin: auto;
 }
 
-header nav {
-  background-color: whitesmoke;
-}
 
 
-h1 {
-color:blue;
-font-size: 3rem;
-text-align: left;
-}
 
-h4 {
-  color: blue;
-  padding: 5px;
-
-}
-header .menu {
-  padding: 0 5px;
-}
-
-header .menu {
-  display: block;
-  text-decoration: none;
-  color: var(--main-color);
-}
-
-@media(min-width: 500px){
-
-  .burger-icon {
-    display: none;
-}
-
-header nav div {
-  display: flex;
-}
-
-header#home nav .menu {
-  display: flex;
-  flex: 1;
-  justify-content: space-around;
-  align-items: center;
-}
-}
 
 header .banner  {
     background-image: url(../img/battom.jpg);
@@ -96,7 +98,7 @@ header .banner h2 {
     color: var(--main-color);
     font-size: 1rem;
     text-align: center;
-  }/*
+  }
 
   /*controls*/
 
