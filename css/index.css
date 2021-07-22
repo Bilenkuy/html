@@ -10,11 +10,18 @@
     --accent-color: blue;
 }
 
-h1 {
-  color:blue;
-  font-size: 3.5rem;
-  text-align: left;
-  }
+.heading {
+  font-size: 84px;
+  color: blue;
+  line-height: 1.1;
+  font-weight: 800;
+
+}
+
+.highlight {
+  color: black;
+}
+
   
   h4 {
     color: blue;
@@ -53,11 +60,24 @@ header nav {
 .container {
   max-width: 980px;
   margin: auto;
+
+}
+.burger-icon {
+  font-size: 3.5rem;
 }
 
+#burger-checkbox {
+  display: none;
+}
 
+input:checked ~ .menu {
+  display: block;  
+} 
+@media (min-width: 500px) {
 
-
+  .burger-icon {
+      display: none;}
+} 
 
 header .banner  {
     background-image: url(../img/battom.jpg);
@@ -82,22 +102,22 @@ header .banner h2 {
     font-size: 1,5rem;
   }
 
- .services {
+ .container {
     min-height: 200px;
  }
 
-  main .services h3 {
+ .container h3 {
     font-weight: normal;
-    color: var(--main-color);
+    color: black;
     font-size: 3.5rem;
     text-align: center;
   }
   
-  main .services p {
+  .container p {
     font-weight: normal;
     color: var(--main-color);
     font-size: 1rem;
-    text-align: center;
+    text-align: center ;
   }
 
   /*controls*/
@@ -152,5 +172,37 @@ header .banner h2 {
       @media (min-width: 980px) {
         main .services {
           grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+
+       h5 {
+        font-weight: normal;
+        color: black;
+        font-size: 3.5rem;
+        text-align: center;
+      }
+
+
+
+
+
+      section .pricing article  {
+        border: 1px solid  var(--main-color);
+        padding: 5px;
+        
+      }
+
+
+      @media (min-width: 600px) {
+        section .pricing {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 5px;
+        }
+      }
+
+      @media (min-width: 900px) {
+        section .pricing {
+          grid-template-columns: 1fr 1fr 1fr ;
         }
       }
