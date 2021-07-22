@@ -186,10 +186,10 @@ header .banner h2 {
 
 
 
-      section .pricing article  {
-        border: 1px solid  var(--main-color);
+      section  .price {
+        border: 3px solid  var(--main-color);
         padding: 5px;
-        
+        background-color: white;
       }
 
 
