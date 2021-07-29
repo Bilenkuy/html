@@ -2,11 +2,12 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 :root {
   font-family: 'Ubuntu', 'sans-serif' ;
-    --main-color: rgba(85, 76, 76, 0.836);
+    --main-color: rgba(61, 55, 55, 0.836);
     --accent-color: blue;
 }
 
@@ -14,20 +15,18 @@
   font-size: 84px;
   color: blue;
   line-height: 1.1;
-  font-weight: 1200;
-
-
+  font-weight: 900px;
 }
 
 .highlight {
   color: black;
 }
-
   
   h4 {
     color: blue;
-    padding: 5px;
-  
+    padding: 10px;
+    font-size: 25px;
+    text-align: left;
   }
 
 header .menu a {
@@ -40,6 +39,7 @@ header .menu a:hover {
   font-weight: bold;
   color: yellow;
 }
+
 @media (min-width: 600px){
 header nav {
   display: flex;
@@ -63,6 +63,7 @@ header nav {
   margin: auto;
 
 }
+
 .burger-icon {
   font-size: 4.5rem;
 }
@@ -74,6 +75,7 @@ header nav {
 input:checked ~ .menu {
   display: block;  
 } 
+
 @media (min-width: 500px) {
 
   .burger-icon {
@@ -84,7 +86,7 @@ header .banner  {
     background-image: url(../img/battom.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 450px;
+    min-height: 850px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,39 +96,44 @@ header .banner  {
 header .banner h2 {
     font-weight: normal;
     color: white;
-    font-size: 3.5rem;
+    padding: 40px;
+    font-size: 75px;
+    font-weight: bold;
   }
 
   header .banner p {
     font-weight: normal;
     color: white;
-    font-size: 1,5rem;
+    font-size: 20px;
+    padding: 40px;
   }
 
  .container {
-    min-height: 400px;
+    min-height: 350px;
  }
 
  .container h3 {
     font-weight: 25px;
     color: var(--main-color);
-    font-size:  3.5rem;
+    font-size: 40px;
     text-align: center;
     line-height: 200px;
   }
   
   .container p {
-    font-weight: 20px;
+    font-weight: 55px;
     color: var(--main-color);
-    font-size: 15px;
-    text-align: center ;
+    font-size: 18px;
+    text-align: center;
+    padding: 25px;
   }
 
   /*controls*/
 
   .button {
-    padding: 0.35em 1.2em;
-    border: 0.1em solid yellow;
+    
+    padding: 0.80em 2.2em;
+    border: 0.2em solid yellow;
     margin: 0 0.3em 0.3em 0;
     border-radius: 20px;
     color: var(--main-color);
@@ -142,20 +149,24 @@ header .banner h2 {
         cursor: pointer;
       }
 
-      main .services article {
-        border: 1px solid  var(--main-color);
-        padding: 5px;
+      main .services article  {
+        padding: 10px;
+      }
+
+      main .services article p {
+        text-align: left;
       }
 
       main .services article img {
         display: block;
         width: 100%;
+        border-radius: 10px;
       }
+      
 
-      main .services article .button {
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
+      main .services article .button  {
+        display: grid;
+        justify-content: left;
       }
 
       @media (min-width: 600px) {
@@ -180,14 +191,23 @@ header .banner h2 {
        h5 {
         font-weight: normal;
         color: black;
-        font-size: 3.5rem;
+        font-size: 50px;
         text-align: center;
+        font-weight: bold;
+        padding: 70px;
       }
 
-      section  .price {
-        border: 3px solid  var(--main-color);
-        padding: 10px;
+section .pricing {
+  background-color: gainsboro;
+  border-radius: 15px;
+}
+   
+section  .price {
+        padding: 70px;
         background-color: white;
+        text-align: center;
+        line-height: 25px;
+        border-color: yellow white white white;
       }
 
 
@@ -195,7 +215,7 @@ header .banner h2 {
         section .pricing {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          grid-gap: 5px;
+          grid-gap: 25px;
         }
       }
 
@@ -265,6 +285,7 @@ header .banner h2 {
 .active:after {
   content: "\2796";
 }
+
 /*Contact  */
 .contacts-h2 {
   color: white;
@@ -304,16 +325,10 @@ header .banner h2 {
   background-image: url(../img/contact.jpeg);
   }
 
-  img.resize {
-    width: 540px; 
-    height: auto
-  }
-
   .contacts-us .contacts-info a:hover {
     font-weight: bold;
     color: yellow;
   }
-  
 
 .contacts-input-text {
   color: --main-color;
@@ -327,7 +342,7 @@ header .banner h2 {
   background-color: white;
   padding: 50px;
   width: 70%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 input[type="text"], input[type="tel"], input[type="email"] {
@@ -340,13 +355,12 @@ input[type="text"], input[type="tel"], input[type="email"] {
   border: 1px solid white;
   width: 70%;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 30px;
 }
-
 
 .quote-message{
   height: 150px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color:#d1cecb;
   border: 1px solid white;
   font-size: 20px;
@@ -372,5 +386,45 @@ input[type="text"], input[type="tel"], input[type="email"] {
 .quote-submit:hover {
   background-color: blue;
   color: white;
+}
+
+.pronto {
+  font-size: 40px;
+  color: blue;
+  line-height: 3.1;
+  font-weight: 1200;
+}
+
+.wash {
+  color: black;
+}
+
+footer .menu a {
+  display: block;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+footer .menu:hover {
+  font-weight: bold;
+  color: yellow;
+}
+
+@media (min-width: 600px){
+  footer nav {
+  display: flex;
+}
+}
+
+footer nav .menu {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+footer nav {
+  background-color: whitesmoke;
 }
 
