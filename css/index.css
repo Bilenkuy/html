@@ -3,12 +3,18 @@
     margin: 0;
     padding: 0;
 
+
 }
 
 :root {
   font-family: 'Ubuntu', 'sans-serif' ;
     --main-color: rgba(61, 55, 55, 0.836);
     --accent-color: blue;
+}
+
+body{
+  max-width: 100%;
+  margin: auto;
 }
 
 .heading {
@@ -284,6 +290,15 @@ section  .price {
 
 .active:after {
   content: "\2796";
+}
+
+.slides {
+  display: flex;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 /*Contact  */
