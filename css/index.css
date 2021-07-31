@@ -46,7 +46,7 @@ header .menu a:hover {
   color: yellow;
 }
 
-@media (min-width: 600px){
+@media (min-width: 900px){
 header nav {
   display: flex;
 }
@@ -82,8 +82,7 @@ input:checked ~ .menu {
   display: block;  
 } 
 
-@media (min-width: 500px) {
-
+@media (min-width: 700px) {
   .burger-icon {
       display: none;}
 } 
@@ -296,7 +295,7 @@ section  .price {
   display: flex;
 }
 
-img {
+.slides img {
   display: block;
   width: 100%;
 }

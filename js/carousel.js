@@ -1,8 +1,12 @@
 (function() {
 
     const slides = [
-      '<div><img src="carwash" alt="Cat"><h2>Cat 1</h2></div>',
-      <img src="img/carwash.jpg" alt="CarWash" />
+      '<div><a img src="img/wash1.jpeg" alt="Car"/a></div>',
+      '<div><a img src="img/wash2.jpeg" alt="Car"/a></div>',
+      '<div><a img src="img/wash3.jpeg" alt="Car"/a></div>',
+      '<div><a img src="img/wash4.jpeg" alt="Car"/a></div>',
+      '<div><a img src="img/wash5.jpeg" alt="Car"/a></div>',
+      '<div><a img src="img/wash6.jpeg" alt="Car"/a></div>',
 
     ];
   
