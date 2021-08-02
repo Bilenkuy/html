@@ -7,16 +7,28 @@
     <title>Contact-Us</title>
 </head>
 <body>
-    <form action="">
-        <input type="text" placeholder="Enter your full name*" required name="full-name">
-        <br>
-        <input type="tel" name="phone-nuber" placeholder="Enter your phone nuber*" required>
-        <br>
-        <input type="tel" name="email" placeholder="Enter your email*" required>
-        <br>
-        <textarea name="message" cols="30" rows="10" placeholder="Type your messge"></textarea>
-        <br>
-        <input type="submit" value="Contact Us">
+    <div class="contacts-form">
+        <form>
+            <div class="quote-input">
+             <input class="contacts-input-text" type="text" placeholder="Enter your full name*" required
+                name="full-name">
+            </div>
+            <br>
+            <div class="quote-input">
+             <input class="contacts-input-text" type="tel" name="phone-number" placeholder="Phone number*" required>
+            </div>
+             <br>
+            <div class="quote-input">
+             <input class="contacts-input-text" type="email" name="email" placeholder="E-mail*" required>
+            </div>
+            <br>
+            <div class="quote-input">
+             <textarea class="quote-message" name="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+            </div>
+            <br>
+            <input class="quote-submit" type="submit" value="Contact Us">
+        </form>
+    </div>
     </form>
 </body>
 
